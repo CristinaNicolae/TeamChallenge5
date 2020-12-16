@@ -1,5 +1,8 @@
 package com.scoalainformala.teamchallenge5;
 
+import com.scoalainformala.teamchallenge5.data.InMemoryDataSource;
+import com.scoalainformala.teamchallenge5.data.WordDto;
+
 import org.junit.Test;
 
 import java.util.List;
@@ -11,7 +14,7 @@ public class InMemoryDataSourceTest {
     @Test
     public void when_getItemsInvoked_returnsCorrectResult() {
         InMemoryDataSource source = new InMemoryDataSource();
-        List<WordDto> items = source.getItems();
+        List<WordDto> items = source.getWords();
 
         assertEquals(2, items.size());
 
@@ -31,10 +34,10 @@ public class InMemoryDataSourceTest {
         WordDto word1 = new WordDto("Verde", "Def3");
         WordDto word2 = new WordDto("Rosu", "Def4");
 
-        source.add(word1);
-        source.add(word2);
+        source.addWord(word1);
+        source.addWord(word2);
 
-        List<WordDto> items = source.getItems();
+        List<WordDto> items = source.getWords();
 
         assertEquals(4, items.size());
         assertEquals("Verde", items.get(2).getName());
