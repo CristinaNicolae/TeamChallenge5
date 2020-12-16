@@ -2,6 +2,8 @@ package com.scoalainformala.teamchallenge5.domain;
 
 import androidx.lifecycle.LiveData;
 
+import java.util.List;
+
 public class FetchWordUseCase {
 
     private final WordItemMediator mediator;
@@ -10,7 +12,7 @@ public class FetchWordUseCase {
         this.mediator = mediator;
     }
 
-    public LiveData<WordItem> execute(){
+    public LiveData<List<WordItem>> execute(){
         return mediator.getWords();
     }
 }
