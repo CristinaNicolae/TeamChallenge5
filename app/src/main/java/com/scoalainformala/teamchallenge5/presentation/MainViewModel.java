@@ -1,4 +1,4 @@
-package com.wikitech.myapplication;
+package com.scoalainformala.teamchallenge5.presentation;
 
 import android.util.Log;
 

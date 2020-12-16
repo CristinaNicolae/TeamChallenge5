@@ -1,8 +1,10 @@
-package com.scoalainformala.teamchallenge5;
+package com.scoalainformala.teamchallenge5.presentation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.scoalainformala.teamchallenge5.R;
 
 public class MainActivity extends AppCompatActivity {
 
