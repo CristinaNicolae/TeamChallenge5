@@ -1,5 +1,7 @@
 package com.scoalainformala.teamchallenge5.data;
 
+import com.scoalainformala.teamchallenge5.domain.WordRepository;
+
 import java.util.Arrays;
 import java.util.List;
 

@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface WordRepository {
     List<WordDto> getWords();
-    void addWord(WordItem word);
+    void addWord(WordDto word);
 }
